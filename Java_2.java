@@ -16,7 +16,7 @@ public class JavaApplication2 {
         int base=3,altezza=4,p;
         float a;
         a=base*altezza;
-        p=(base*altezza)*2;
+        p=(base+altezza)*2;
         System.out.println(a);
         System.out.println(p);
     
