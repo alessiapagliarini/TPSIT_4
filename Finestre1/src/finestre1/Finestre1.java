@@ -19,17 +19,17 @@ public class Finestre1 {
     public static void main(String[] args) {
         Finestra f;
         int n, x;
-        int p1 = 0, p2= 0;
+        int p1 = 0, p2 = 0;
         Scanner input = new Scanner(System.in);
-        do{
+        do {
             System.out.println("Quante finestre vuoi stampare? ");
             n = input.nextInt();
-        }while((n<0)||(n>20));
+        } while ((n < 0) || (n > 20));
         for (x = 0; x < n; x++) {
             f = new Finestra();
             f.testo.setText("Sono la finestra " + (x + 1));
             f.setVisible(true);
-            f.setLocation(p1 = p1 + 200, p2= p2+50 );
+            f.setLocation(p1 = p1 + 200, p2 = p2 + 50);
         }
 
     }
